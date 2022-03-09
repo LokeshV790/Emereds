@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title>Emereds: Emergency Beds</title>
-		<link rel="icon" href="assets/favicon.ico">
+		<link rel="icon" href="assets/icon.jpg">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<meta name="description" content="An Emergency beds finding sytem which allow to find availablity of beds in diffrent areas and help people to save lives of their loved ones.">
+		<meta name="description" content="An Emergency beds finding system which allow to find availablity of beds in diffrent areas and help people to save lives of their loved ones.">
 		<meta name="keywords" content="bed, beds, oxygen, ICU, ventilator, covid, coronavirus, corona, india, virus, corona, beds india, covid beds in india, corona beds in india, hospital beds availability">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://www.emereds.in">
@@ -36,29 +36,25 @@
 	</head>
 	<body>
 		<div id="header">
-			<div class="container responsive" id="pointers">
-				<div><i class="icon-exclamation"></i><p>We use data provided by hospitals & the real-time actual numbers may differ. <b>Please contact the hospital prior visiting.</b></p></div>
-				<div><i class="icon-info"></i><p>Access data via <a href="https://documenter.getpostman.com/view/15598746/TzXzDH7k" target="_blank">API</a>.</p>p></div>
-			</div>
 			<div id="selectors">
 				<div id="loc">
 					<select class="custom-select" name="city" id="city" onchange="changePlace(this.value)">
-						<option value="">DISTRICT</option>
+						<option value="">--District--</option>
 					</select>
 				</div>
 				<label>Facilities:</label>
 				<div id="bed">
 					<select name="bedType" id="bedType" onchange="changeBedType(this.value)">
-						<option value="">-- ALL --</option>
-						<option value="icu" data-toggle="modal" data-target="#icudisclaimer">ICU Beds</option>
+						<option value="">--All--</option>
+						<option value="icu" data-toggle="modal" data-target="#icudisclaimer">Emergency Beds</option>
 						<option value="ventilator" data-toggle="modal" data-target="#ventdisclaimer">Ventilators</option>
 					</select>
 				</div>
 			</div>
 			<div id="markers">
 				<span>Data from:</span>
-				<p><img src="assets/marker-gov.svg"> Govt. Sources</p>
-				<p><img src="assets/marker-vol.svg"> Independent Aggregators</p>
+				<p><img src="assets/hospitals.svg">Hospitals</p>
+				<p><img src="assets/clinics.svg">Normal Clinics</p>
 			</div>
 		</div>
 
@@ -70,7 +66,7 @@
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title">NOTE</h5>
+		        <h5 class="modal-title">Note</h5>
 		      </div>
 		      <div class="modal-body">
 		        <div>To get availability details, click on <b style="color: #1997d4">blue</b> markers on map.</div>
@@ -83,7 +79,7 @@
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title">NOTE</h5>
+		        <h5 class="modal-title">Note</h5>
 		      </div>
 		      <div class="modal-body">
 		        <div>To get availability details, click on <b style="color: #1997d4">blue</b> markers on map.</div>
