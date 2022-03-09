@@ -69,11 +69,11 @@ var markerIcon = L.Icon.extend({
 });
 
 var govIcon = new markerIcon({
-	iconUrl: "assets/marker-gov.svg",
+	iconUrl: "assets/hospitals.svg",
 });
 
 var volIcon = new markerIcon({
-	iconUrl: "assets/marker-vol.svg",
+	iconUrl: "assets/clinics.svg",
 });
 
 L.control.zoom({
@@ -155,14 +155,14 @@ function loadPlaces(mcg, bedType) {
 	var haryana = new Haryana();
 	haryana.populate(mcg, bedType);
 
-	// var jharkhand = new Jharkhand();
-	// jharkhand.populate(mcg, bedType);
+	var jharkhand = new Jharkhand();
+	jharkhand.populate(mcg, bedType);
 				
 	var madhyapradesh = new Madhya_Pradesh();
 	madhyapradesh.populate(mcg, bedType);
 
-	// var odisha = new Odisha();
-	// odisha.populate(mcg, bedType);
+	var odisha = new Odisha();
+	odisha.populate(mcg, bedType);
 
 	var rajasthan = new Rajasthan();
 	rajasthan.populate(mcg, bedType);
